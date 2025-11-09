@@ -1,0 +1,14 @@
+:root {
+  /* 🎨 Màu chủ đạo: trắng - đen - hồng */
+  --color-primary: #ff4f8b;
+  --color-secondary: #ffe6f0;
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-border: #eaeaea;
+
+  /* ✨ Font & bo góc & bóng đổ */
+  --font-main: "Poppins", sans-serif;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --shadow-soft: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
