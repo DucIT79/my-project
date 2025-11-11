@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, FormGroup, Label, Input, Button, Card, CardBody, CardImg, CardText,} from "reactstrap";
 import styles from "./CheckOutForm.module.css";
-import qrImage from "../../assets/qr-code.png"; // 🔹 thay bằng ảnh QR của bạn
+import qrImage from "../../assets/qr-code.png"; 
 
 export const CheckOutForm = () => {
     const [paymentMethod, setPaymentMethod] = useState("");
