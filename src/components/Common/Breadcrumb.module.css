@@ -1,0 +1,33 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0; /* Khoảng đệm trên dưới */
+  font-size: 0.9rem; /* Kích thước chữ nhỏ hơn một chút */
+  color: #6c757d; /* Màu chữ mặc định (màu xám) */
+  background-color: transparent;
+  border-bottom: 1px solid #e0e0e0; /* Thêm đường kẻ mờ bên dưới */
+  margin-bottom: 1.5rem; /* Khoảng cách với nội dung bên dưới */
+}
+
+.link {
+  text-decoration: none;
+  /* Dùng biến CSS --color-primary từ file theme.css của bạn (nếu có) */
+  color: var(--color-primary, #0d6efd); 
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #0a58ca; /* Màu đậm hơn khi hover */
+}
+
+.separator {
+  margin: 0 0.75rem; /* Khoảng cách 2 bên dấu / */
+  color: #6c757d;
+}
+
+.active {
+  color: #333; /* Màu chữ đậm cho trang hiện tại */
+  font-weight: 500;
+}

@@ -1,0 +1,68 @@
+.bannerSection {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f6faf7;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 70px;
+}
+
+.slider {
+  width: 100%;
+  height: 600px;
+}
+
+.bannerImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+ 
+  color: #d35b73;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+:global(.swiper-button-prev::after),
+:global(.swiper-button-next::after) {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+:global(.swiper-button-prev:hover),
+:global(.swiper-button-next:hover) {
+ 
+  color: white;
+  transform: scale(1.1);
+}
+
+:global(.swiper-pagination-bullet) {
+  background: #d35b73;
+  opacity: 0.4;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  opacity: 1;
+}
+
+
+.bannerSection :global(.swiper-button-prev),
+.bannerSection :global(.swiper-button-next) {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+
+.bannerSection:hover :global(.swiper-button-prev),
+.bannerSection:hover :global(.swiper-button-next) {
+  opacity: 1;
+  visibility: visible;
+}

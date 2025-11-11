@@ -1,5 +1,15 @@
-*{
-  box-sizing: border-box;
+html {
+  box-sizing: border-box; /* 1. Đặt html làm gốc */
   margin: 0;
   padding: 0;
+  
+  /* Quan trọng: Ngăn tràn lề ngang ở cấp độ cao nhất */
+  overflow-x: hidden; 
 }
+
+/* 2. Ép tất cả mọi thứ (kể cả :before, :after) kế thừa từ html */
+/* *, *:before, *:after {
+  box-sizing: inherit; 
+  margin: 0;
+  padding: 0;
+} */

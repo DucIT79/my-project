@@ -1,0 +1,84 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05); 
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.contentWrapper {
+  flex-grow: 1; 
+  padding: 10px 15px 15px 15px; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.contentWrapper h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
+
+
+.price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  padding-bottom: 10px;
+  margin-top: auto; 
+}
+
+
+.button {
+ 
+  background-color: #fff;
+  color: var(--color-primary); 
+  border: 1px solid var(--color-primary); 
+  border-radius: 6px;
+  
+  margin: 0 15px 15px 15px; 
+  padding: 10px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  /* Căn icon và chữ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button:hover {
+  background-color: var(--color-primary); 
+  color: #fff; 
+}
+
+.link {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  overflow: hidden;
+  display: block;
+}
+
+
+.link :global(img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo ảnh vừa khung */
+  transition: transform 0.4s ease;
+}
+
+.link:hover :global(img) {
+  transform: scale(1.05); 
+}

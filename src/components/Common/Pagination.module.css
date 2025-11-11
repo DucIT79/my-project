@@ -1,0 +1,54 @@
+/* 1. Class cho thẻ <Pagination> (ul) */
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  /* Xóa các style mặc định của Bootstrap */
+  --bs-pagination-border-width: 0; 
+  --bs-pagination-margin-start: 0;
+}
+
+/* 2. Class cho thẻ <PaginationItem> (li) */
+.pageItem {
+  margin: 0 4px; /* Tạo khoảng cách */
+}
+
+/* 3. Class cho thẻ <PaginationLink> (a) */
+.pageLink {
+  display: block;
+  text-decoration: none;
+  border-radius: 8px !important;
+  color: #555;
+  background-color: #fff;
+  font-weight: 600;
+  padding: 0.6rem 0.9rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* 4. PHẦN QUAN TRỌNG: 
+Reactstrap/React-Bootstrap sẽ tự thêm class "active" và "disabled"
+Chúng ta dùng :global() để "bắt" lấy các class đó và style chúng
+*/
+
+/* 4a. Style khi hover (nhưng không active/disabled) */
+.pageItem:not(:global(.active)):not(:global(.disabled)) .pageLink:hover {
+  background-color: #f4f4f4;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* 4b. Style khi active (trang hiện tại) */
+.pageItem:global(.active) .pageLink {
+  background-color: #0d6efd; /* Bạn có thể đổi màu này */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(13, 110, 253, 0.4);
+}
+
+/* 4c. Style khi disabled */
+.pageItem:global(.disabled) .pageLink {
+  background-color: #e9ecef;
+  color: #adb5bd;
+  box-shadow: none;
+  cursor: not-allowed;
+}

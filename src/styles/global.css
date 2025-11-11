@@ -22,3 +22,6 @@ a:hover {
 html {
   scroll-behavior: smooth;
 }
+/* * {
+  outline: 1px solid red !important;
+} */

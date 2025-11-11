@@ -3,9 +3,7 @@ import { useSelector } from "react-redux";
 import { CartList } from "../components/Cart/CartList";
 import { CartAction } from "../components/Cart/CartAction";
 import { TiShoppingCart } from "react-icons/ti";
-import { Header } from "../components/Layout/Header";
 import { CheckOutForm } from "../components/CheckOut/CheckOutForm";
-import { Link } from "react-router-dom";
 
 
 export const CartPage = () => {

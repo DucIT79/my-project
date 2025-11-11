@@ -1,0 +1,66 @@
+
+
+.notFoundContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh; 
+    padding: 40px 0;
+}
+
+.contentWrapper {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.svgContainer {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px auto;
+}
+
+.notFoundSvg {
+    width: 100%;
+    height: 100%;
+    color: var(--color-primary, #e63e7a); 
+}
+
+.notFoundTitle {
+    font-size: 6rem; 
+    font-weight: 900;
+    margin-bottom: 0;
+    line-height: 1;
+    color: var(--color-primary, #e63e7a);
+}
+
+.notFoundMessage {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-top: 20px;
+}
+
+.notFoundSuggestion {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.homeButton {
+    
+    background-color: var(--color-primary, #e63e7a);
+    border-color: var(--color-primary, #e63e7a);
+    font-weight: 600;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.homeButton:hover {
+    background-color: #d63384; 
+    border-color: #d63384;
+    transform: translateY(-2px);
+}
